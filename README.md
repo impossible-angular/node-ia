@@ -3,6 +3,12 @@
 - [Main thread starvation](#main-thread-starvation)
 
 ### Run *.ts files
+
+**Briefly**
+The `--experimental-strip-types` flag was an experimental command-line option in Node.js
+that enabled the direct execution of TypeScript (.ts) files by automatically removing type annotations at runtime.
+(e.g., v23.6.0 and later, or v22.18.0 and later in the LTS), type stripping is enabled by default when running .ts files
+
 ```shell
 node --experimental-strip-types [file.ts]
 ```
@@ -35,7 +41,7 @@ Add to tsconfig.json
 ### Main thread starvation
 [**Source project:** main-thread-starvation](main-thread-starvation)
 
-**Briefly**: 
+**Briefly**
 
 Simulate main thread starvation in Node.js, and use a profiler to locate the bottleneck. Then, employ a worker thread (or Worker) to prevent the main thread from starving.
 
@@ -43,18 +49,20 @@ Simulate main thread starvation in Node.js, and use a profiler to locate the bot
 
 Serve and debug.
 ```bash
-node --experimental-strip-types --inspect main-thread-starvation/server.ts
+node --inspect main-thread-starvation/server.ts
 ```
 
 Serve with performance profile.
 ```bash
-node --experimental-strip-types --prof main-thread-starvation/server.ts
+node --prof main-thread-starvation/server.ts
 ```
 
 Parse profile to find bottleneck.
 ```bash
 node --prof-process [isolate-xxxxxxx-xxxx-v8.log] > processed.txt
 ```
+
+**Details**
 
 **In browser:**
 
