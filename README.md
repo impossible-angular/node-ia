@@ -1,8 +1,6 @@
-- [Node.js examples](#nodejs-examples)
-  - [Run *.ts files](#run-ts-files)
-  - [Main thread starvation](#main-thread-starvation)
-
 ## Node.js examples
+- [Run *.ts files](#run-ts-files)
+- [Main thread starvation](#main-thread-starvation)
 
 ### Run *.ts files
 ```shell
