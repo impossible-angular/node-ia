@@ -1,14 +1,22 @@
 {
   "name": "node-ia",
   "version": "1.0.0",
-  "description": "Main thread starvation",
-  "type": "module",
+  "description": "Advanced Node.js examples.",
   "scripts": {
     "main-thhread-inspect": "node --experimental-strip-types --inspect server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impossible-angular/node-ia.git"
   },
   "keywords": [],
   "author": "Sergii Lutchyn",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/impossible-angular/node-ia/issues"
+  },
+  "homepage": "https://github.com/impossible-angular/node-ia#readme",
+  "type": "module",
   "dependencies": {
     "express": "^5.1.0"
   },
