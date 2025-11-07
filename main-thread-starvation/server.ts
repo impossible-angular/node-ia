@@ -10,7 +10,7 @@ import { fibonacci } from './fibonacci.ts'
  * Simulate main thread starvation in Node.js, and use a profiler to locate the bottleneck.
  * Then, employ a worker thread (or Worker) to prevent the main thread from starving.
  *
- * Usage:
+ * Usage: npm run main-thread-inspect
  *
  */
 

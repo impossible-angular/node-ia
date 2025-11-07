@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Advanced Node.js examples.",
   "scripts": {
-    "main-thhread-inspect": "node --experimental-strip-types --inspect server.ts"
+    "main-thread-inspect": "node  --inspect main-thread-starvation/server.ts"
   },
   "repository": {
     "type": "git",
