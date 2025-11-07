@@ -1,0 +1,20 @@
+{
+  "name": "node-ia",
+  "version": "1.0.0",
+  "description": "Main thread starvation",
+  "type": "module",
+  "scripts": {
+    "main-thhread-inspect": "node --experimental-strip-types --inspect server.ts"
+  },
+  "keywords": [],
+  "author": "Sergii Lutchyn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.6.1",
+    "typescript": "^5.9.3"
+  }
+}
