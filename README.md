@@ -1,6 +1,7 @@
 ## Node.js examples
 - [Run *.ts files](#run-ts-files)
 - [Main thread starvation](#main-thread-starvation)
+- [Server-Sent Event implementation](#server-sent-event-implementation)
 
 ### Run *.ts files
 
@@ -79,4 +80,17 @@ http://localhost:3000/random
 To avoid block main thread use worker. It will run for 30s but not blocks other api.
 ```
 http://localhost:3000/fibonacci/45
+```
+
+### Server-Sent Event implementation
+
+[**Source project:** event-stream](event-stream)
+
+**Briefly**
+
+Server-Sent Event implementation. Stream data to client 15 times after stream-end event. 
+
+**Usage:**
+```bash
+npm run event-stream
 ```
